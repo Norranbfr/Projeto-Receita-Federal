@@ -1,1 +1,0 @@
-Requisitos Funcionais do sistema
