@@ -4,25 +4,25 @@
 
 Sistema desenvolvido para Analise de credito.
 
-#Integrantes 
+# 👥 Integrantes 
 - Lucas Costa 
 - Leticia Teles
 - Marcos Vinicius Dias
 - Thiago Barros
 - Norran Martins
 
-#Objetivo
+# 🎯 Objetivo
 Desenvolver um sistema que auxilie na análise de risco de crédito, permitindo
 consultar empresas pelo CNPJ, visualizar o Quadro de Sócios e Administradores (QSA)
 e identificar vínculos societários.
 
-#Tecnologia Utilizadas
+# 🛠 Tecnologia Utilizadas
 - Html
 - CSS
 - MYSQL
 - JavaScript
 
-#Estrutura do projeto
+# 📂 Estrutura do projeto
 
 /backend
 /frontend
