@@ -20,6 +20,12 @@ e identificar vínculos societários.
 - MYSQL
 - JavaScript
 
+## ⚙ Funcionalidades
+
+- Login
+- Cadastro
+- Relatórios
+
 # 📂 Estrutura do projeto
 
 /backend
