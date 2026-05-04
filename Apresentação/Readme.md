@@ -1,5 +1,8 @@
 # Projeto-Receita-Federal
 
+#Descrição
+Sistema desenvolvido para Analise de credito.
+
 #Integrantes 
 - Lucas Costa 
 - Leticia Teles
@@ -26,6 +29,11 @@ e identificar vínculos societários.
 /diagramas
 /requisitos
 
+#Organização do Projeto
+
+[Acessar Trello do Projeto](https://trello.com/b/rqYJ74Rh/kick-off-projeto-receita-federal)
+
+## 🚧 Status
 Projeto em Desenvolvimento
 
 
