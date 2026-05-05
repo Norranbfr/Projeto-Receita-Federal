@@ -25,6 +25,19 @@ e identificar vínculos societários.
 - O sistema deve gerar um relatório básico de análise de risco de crédito da empresa.
 - O sistema deve permitir a busca de empresas por nome de sócio.
 
+## 🧭 Escopo do Sistema
+- Consulta de CNPJ
+- Exibição de dados da empresa
+- Análise de sócios (QSA)
+- Identificação de vínculos societários
+- Relatório básico de risco
+
+## 🚫 Fora de Escopo (Não inclui)
+- Busca por CPF
+- Cadastro manual de empresas
+- Alteração de dados cadastrais
+- Integração com sistemas bancários reais
+
 
 #Organização do Projeto
 
