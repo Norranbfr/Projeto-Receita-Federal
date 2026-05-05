@@ -15,24 +15,17 @@ consultar empresas pelo CNPJ, visualizar o Quadro de Sócios e Administradores (
 e identificar vínculos societários.
 
 # 🛠 Tecnologia Utilizadas
-- Html
-- CSS
-- MYSQL
+- 
+- 
+- 
 - JavaScript
 
 ## ⚙ Funcionalidades
 
-- Login
-- Cadastro
-- Relatórios
+- 
+- 
+- 
 
-# 📂 Estrutura do projeto
-
-/backend
-/frontend
-/banco
-/diagramas
-/requisitos
 
 #Organização do Projeto
 
