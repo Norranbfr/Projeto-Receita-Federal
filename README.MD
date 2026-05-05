@@ -18,7 +18,7 @@ e identificar vínculos societários.
 - 
 - 
 - 
-- JavaScript
+- 
 
 ## ⚙ Funcionalidades
 
