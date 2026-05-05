@@ -15,7 +15,7 @@ consultar empresas pelo CNPJ, visualizar o Quadro de Sócios e Administradores (
 e identificar vínculos societários.
 
 # 🛠 Tecnologia Utilizadas
-- 
+- PostgreSQL
 - 
 - 
 - 
