@@ -14,7 +14,7 @@
 |------|
 | Lucas Costa |
 | Leticia Teles |
-| Marcos Vinicius Dias |
+| Marcos Vinicius |
 | Thiago Fabri |
 | Norran Martins |
  
