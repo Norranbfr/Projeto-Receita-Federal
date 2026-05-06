@@ -62,7 +62,3 @@ Desenvolver um sistema que auxilie na **análise de risco de crédito**, permiti
 Acompanhe o progresso no [Trello do Projeto](https://trello.com/b/rqYJ74Rh/kick-off-projeto-receita-federal).
  
 ---
- 
-## 🚧 Status
- 
-**Em desenvolvimento**
