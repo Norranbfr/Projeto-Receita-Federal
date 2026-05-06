@@ -38,7 +38,6 @@ Desenvolver um sistema que auxilie na **análise de risco de crédito**, permiti
 ## ⚙️ Funcionalidades
  
 - Consulta de empresas por meio do CNPJ
-- Geração de relatório básico de análise de risco de crédito
 - Busca de empresas por nome de sócio
 ---
  
