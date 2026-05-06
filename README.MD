@@ -50,7 +50,7 @@ Desenvolver um sistema que auxilie na **análise de risco de crédito**, permiti
 - Exibição de dados da empresa
 - Análise de sócios (QSA)
 - Identificação de vínculos societários
-- Relatório básico de risco
+
 ### 🚫 Fora do escopo
  
 - Busca por CPF
