@@ -33,6 +33,9 @@ Desenvolver um sistema que auxilie na **análise de risco de crédito**, permiti
  
 - **Python**
 - **PostgreSQL**
+- **HTML**
+- **CSS**
+- **JavaScript**
 ---
  
 ## ⚙️ Funcionalidades
