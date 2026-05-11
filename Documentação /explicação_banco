@@ -1,8 +1,8 @@
-# 📊 Diagrama do Banco de Dados
+# Diagrama do Banco de Dados
 
 Este diagrama representa a estrutura do banco de dados do sistema.
 
-## 🧩 Entidades
+## Entidades
 
 ### Empresa
 Armazena os dados das empresas consultadas.
@@ -13,7 +13,7 @@ Armazena os dados dos sócios e administradores.
 ### Participação
 Responsável pela ligação entre empresas e sócios.
 
-## 🎯 Objetivo
+## Objetivo
 
 O modelo foi desenvolvido para identificar vínculos entre empresas e auxiliar na análise de crédito.
 
