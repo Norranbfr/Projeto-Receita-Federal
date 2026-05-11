@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema QSA - Consulta de Empresas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+  <header class="Navbar">
+    <div>
+      <h1>Sistema QSA</h1>
+      <p>Consulta de Empresas e Análise de Sócios</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Consulta por CNPJ</h2>
+
+      <p class="descricao">
+        Digite um CNPJ da base de amostra para consultar os dados da empresa,
+        sócios, empresas relacionadas e nível de risco.
+      </p>
+
+      <div class="formulario">
+        <input type="text" id="cnpjInput" placeholder="Ex: 12345678000190">
+        <button onclick="consultarEmpresa()">Consultar</button>
+      </div>
+
+      <div class="amostras">
+        <strong>CNPJs de teste:</strong>
+        <span onclick="preencherCNPJ('12345678000190')">12345678000190</span>
+        <span onclick="preencherCNPJ('98765432000110')">98765432000110</span>
+        <span onclick="preencherCNPJ('55555555000155')">55555555000155</span>
+        <span onclick="preencherCNPJ('11111111000111')">11111111000111</span>
+      </div>
+
+      <div class="historico">
+        <strong>Histórico de pesquisas:</strong>
+        <div id="listaHistorico" class="lista-historico">
+          <p>Nenhuma pesquisa realizada ainda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultado" class="resultado"></section>
+
+  </main>
+
+  <footer>
+    <p>Kick-off Projeto Receita Federal — Front-end em JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
