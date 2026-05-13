@@ -1,19 +1,19 @@
-# Diagrama do Banco de Dados
+- Diagrama do Banco de Dados
 
 Este diagrama representa a estrutura do banco de dados do sistema.
 
-## Entidades
+- Entidades
 
-### Empresa
+- Empresa
 Armazena os dados das empresas consultadas.
 
-### Sócio
+- Sócio
 Armazena os dados dos sócios e administradores.
 
-### Participação
+- Participação
 Responsável pela ligação entre empresas e sócios.
 
-## Objetivo
+- Objetivo
 
 O modelo foi desenvolvido para identificar vínculos entre empresas e auxiliar na análise de crédito.
 
