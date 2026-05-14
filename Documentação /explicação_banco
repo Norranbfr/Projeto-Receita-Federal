@@ -1,41 +1,71 @@
-Estrutura do Banco de Dados
+# Estrutura do Banco de Dados
 
 O banco de dados foi desenvolvido em PostgreSQL para armazenar informações relacionadas à análise societária e participação empresarial.
 
-Tabelas
+O modelo foi estruturado para organizar empresas, sócios e vínculos societários, permitindo consultas rápidas e análise de conexões empresariais.
 
-Empresa:
-Responsável por armazenar os dados das empresas cadastradas.
+---
 
-Campos:
-- cnpj → Identificador único da empresa
-- razao_social → Nome oficial da empresa
+# Tabelas do Banco de Dados
 
-Socio:
-Armazena os dados dos sócios vinculados às empresas.
+## Empresa
+
+Tabela responsável pelo armazenamento das empresas cadastradas no sistema.
 
 Campos:
-- cpf → Identificador único do sócio
-- nome → Nome do sócio
+- cnpj → identificador único da empresa
+- razao_social → nome oficial da empresa
 
-Participacoes:
-Tabela intermediária responsável por relacionar sócios e empresas.
+---
+
+## Socio
+
+Tabela responsável pelo armazenamento dos sócios vinculados às empresas.
 
 Campos:
-- id → Identificador da participação
-- cpf → Referência ao sócio
-- empresa_cnpj → Referência à empresa
-- percentual_participacao → Percentual de participação do sócio na empresa
+- cpf → identificador único do sócio
+- nome → nome do sócio
 
-Relacionamentos:
+---
 
-- Um sócio pode participar de várias empresas.
-- Uma empresa pode possuir vários sócios.
-- A tabela participacoes realiza o relacionamento entre as tabelas socio e empresa.
+## Participacoes
 
-Regras Utilizadas:
+Tabela intermediária responsável pelo relacionamento entre sócios e empresas.
 
-- Chaves primárias (PRIMARY KEY)
-- Chaves estrangeiras (FOREIGN KEY)
-- Restrição UNIQUE para evitar duplicidade de participação
-- Integridade referencial entre tabelas
+Campos:
+- id → identificador da participação
+- cpf → referência ao sócio
+- empresa_cnpj → referência à empresa
+- percentual_participacao → percentual de participação societária
+
+---
+
+# Relacionamentos
+
+O banco de dados foi modelado utilizando relacionamentos entre tabelas para garantir organização e integridade das informações.
+
+Regras implementadas:
+- um sócio pode participar de várias empresas
+- uma empresa pode possuir vários sócios
+- a tabela `participacoes` realiza a ligação entre empresas e sócios
+
+---
+
+# Regras Utilizadas
+
+O modelo utiliza:
+- chaves primárias (PRIMARY KEY)
+- chaves estrangeiras (FOREIGN KEY)
+- restrição UNIQUE para evitar registros duplicados
+- integridade referencial entre tabelas
+
+---
+
+# Objetivo do Banco de Dados
+
+O banco foi desenvolvido para:
+- armazenar informações empresariais
+- identificar vínculos societários
+- facilitar consultas de empresas e sócios
+- auxiliar análises societárias
+- apoiar análises de crédito
