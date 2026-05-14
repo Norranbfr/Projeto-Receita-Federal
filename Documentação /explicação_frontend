@@ -18,7 +18,6 @@ A aplicação foi criada com foco em simplicidade, organização e facilidade de
 
 O front-end foi dividido em arquivos separados para facilitar a organização e manutenção do projeto.
 
-```text
 frontend/
 │
 ├── css/
