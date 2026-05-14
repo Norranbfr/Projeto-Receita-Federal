@@ -1,11 +1,24 @@
-Front-end
+# Front-end do Sistema
 
-O front-end do sistema foi desenvolvido utilizando HTML, CSS e JavaScript puro, com o objetivo de criar uma interface simples, responsiva e funcional para consulta de empresas e análise de sócios.
+O front-end do sistema foi desenvolvido utilizando HTML, CSS e JavaScript puro, sendo responsável pela interface visual e interação do usuário com o sistema.
 
-Estrutura do Front-end
+A aplicação foi criada com foco em simplicidade, organização e facilidade de navegação para consultas empresariais e análise societária.
 
-A organização do front-end foi separada em arquivos específicos para facilitar manutenção e escalabilidade do projeto.
 
+
+# Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+
+
+# Estrutura do Front-end
+
+O front-end foi dividido em arquivos separados para facilitar a organização e manutenção do projeto.
+
+```text
 frontend/
 │
 ├── css/
@@ -15,52 +28,77 @@ frontend/
 │   └── script.js
 │
 └── index.html
-Tecnologias Utilizadas
-HTML5
-CSS3
-JavaScript
-Funcionalidades da Interface
 
-O sistema permite:
 
-Consulta de empresas por CNPJ
-Exibição de dados da empresa
-Visualização dos sócios
-Identificação de empresas relacionadas
-Geração de análise básica de risco
-Histórico de pesquisas realizadas
-HTML
 
-O arquivo index.html contém toda a estrutura da aplicação, incluindo:
+## index.html
 
-Cabeçalho do sistema
-Campo de pesquisa
-Botões de consulta
-Área de resultados
-Histórico de consultas
-CSS
+Arquivo responsável pela estrutura principal da aplicação.
 
-O arquivo style.css é responsável pela estilização da interface.
+Contém:
+- cabeçalho do sistema
+- campo de pesquisa
+- botões de consulta
+- área de resultados
+- histórico de pesquisas
+
+---
+
+## css/
+
+Pasta responsável pela estilização da interface.
+
+### style.css
+
+Arquivo responsável pelo design visual da aplicação.
 
 Foram aplicados:
+- layout responsivo
+- organização em cards
+- grid de informações
+- cores para níveis de risco
+- efeitos visuais em botões e elementos interativos
 
-Layout responsivo
-Organização em cards
-Grid de informações
-Cores para níveis de risco
-Efeitos visuais em botões e elementos interativos
-JavaScript
 
-O arquivo script.js contém toda a lógica do sistema.
+
+## js/
+
+Pasta responsável pelas funcionalidades da aplicação.
+
+### script.js
+
+Arquivo responsável pela lógica e interatividade do sistema.
 
 Principais funcionalidades implementadas:
+- consulta de empresas
+- busca por CNPJ
+- preenchimento automático
+- identificação de empresas relacionadas
+- cálculo básico de risco
+- histórico de pesquisas
 
-Consulta de empresas
-Busca por CNPJ
-Preenchimento automático
-Identificação de empresas relacionadas
-Cálculo básico de risco
-Histórico de pesquisas
-Objetivo do Front-end
 
-O objetivo do front-end é fornecer uma interface intuitiva para visualização de informações empresariais e análise societária, permitindo uma navegação simples e rápida para o usuário.
+
+# Funcionalidades da Interface
+
+O sistema permite:
+- consulta de empresas por CNPJ
+- exibição de dados da empresa
+- visualização dos sócios
+- identificação de empresas relacionadas
+- geração de análise básica de risco
+- histórico de pesquisas realizadas
+
+---
+
+# Comunicação com o Backend
+
+O front-end realiza requisições para a API Flask desenvolvida no backend.
+
+Os dados recebidos são processados em JavaScript e exibidos dinamicamente na interface do usuário.
+
+
+
+# Objetivo do Front-end
+
+O objetivo do front-end é fornecer uma interface intuitiva para visualização de informações empresariais e análise societária, permitindo uma navegação simples, rápida e organizada para o usuário.
