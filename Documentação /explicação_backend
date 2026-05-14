@@ -21,7 +21,6 @@ A aplicação realiza consultas empresariais, relacionamentos societários e bus
 
 O backend foi dividido em módulos para facilitar a organização e manutenção do sistema.
 
-```text
 backend/
 │
 ├── config/
