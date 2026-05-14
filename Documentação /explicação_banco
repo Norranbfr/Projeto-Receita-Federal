@@ -4,17 +4,19 @@ O banco de dados foi desenvolvido em PostgreSQL para armazenar informações rel
 
 O modelo foi estruturado para organizar empresas, sócios e vínculos societários, permitindo consultas rápidas e análise de conexões empresariais.
 
+O banco foi dividido em módulos para facilitar a organização e manutenção do sistema.
+
 banco/
 │
 ├── diagrama/
-│   └── diagrama_banco.png
+│   └── der.pdf
 │
 ├── scripts/
 │   ├── criacao.sql
 │   ├── inserts.sql
 │   └── consultas.sql
-│
-└── der.pdf
+
+
 
 
 # Tabelas do Banco de Dados
