@@ -4,7 +4,7 @@ O banco de dados foi desenvolvido em PostgreSQL para armazenar informações rel
 
 O modelo foi estruturado para organizar empresas, sócios e vínculos societários, permitindo consultas rápidas e análise de conexões empresariais.
 
----
+
 
 # Tabelas do Banco de Dados
 
@@ -16,7 +16,7 @@ Campos:
 - cnpj → identificador único da empresa
 - razao_social → nome oficial da empresa
 
----
+
 
 ## Socio
 
@@ -26,7 +26,7 @@ Campos:
 - cpf → identificador único do sócio
 - nome → nome do sócio
 
----
+
 
 ## Participacoes
 
@@ -38,7 +38,7 @@ Campos:
 - empresa_cnpj → referência à empresa
 - percentual_participacao → percentual de participação societária
 
----
+
 
 # Relacionamentos
 
@@ -49,7 +49,7 @@ Regras implementadas:
 - uma empresa pode possuir vários sócios
 - a tabela `participacoes` realiza a ligação entre empresas e sócios
 
----
+
 
 # Regras Utilizadas
 
@@ -59,7 +59,6 @@ O modelo utiliza:
 - restrição UNIQUE para evitar registros duplicados
 - integridade referencial entre tabelas
 
----
 
 # Objetivo do Banco de Dados
 
