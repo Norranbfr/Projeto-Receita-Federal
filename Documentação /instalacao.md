@@ -1,6 +1,6 @@
-========================================
+
   GUIA DE INSTALAÇÃO — Sistema QSA Fintech
-========================================
+
 
 ✅ PRÉ-REQUISITOS
 -----------------
@@ -142,7 +142,7 @@ Teste 3 — Clique em "Ver Informações" em um sócio e veja o modal com o nív
   Pesquise "Serviços" no menu iniciar e inicie o postgresql-x64-18
 
 
-========================================
+
   Projeto desenvolvido para a disciplina
   de Banco de Dados — Receita Federal
-========================================
+
