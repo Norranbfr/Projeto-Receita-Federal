@@ -1,6 +1,5 @@
 
-  GUIA DE INSTALAÇÃO — Sistema QSA Fintech
-
+##GUIA DE INSTALAÇÃO — Sistema QSA Fintech
 
 ✅ PRÉ-REQUISITOS
 -----------------
