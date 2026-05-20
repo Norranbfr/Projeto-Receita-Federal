@@ -4,10 +4,15 @@
 Antes de começar, instale os seguintes programas:
 
 Python 3.14 → python.org/downloads
+
 PostgreSQL 18 → postgresql.org/download/windows
+
 PyCharm → jetbrains.com/pycharm
+
 VSCode → code.visualstudio.com (para o front-end)
+
 📁 PASSO 1 — BAIXAR O PROJETO
+
 Acesse o repositório no GitHub: https://github.com/TllFabri/cnpj-data-extractor
 
 Clique em Code → Download ZIP
@@ -31,11 +36,17 @@ Durante a instalação do PostgreSQL, coloque a senha: norran
 Adicione o PostgreSQL no PATH do Windows:
 
 Pesquise "variáveis de ambiente" no menu iniciar
+
 Clique em "Editar as variáveis de ambiente do sistema"
+
 Clique em "Variáveis de Ambiente"
+
 Na seção "Variáveis do sistema" clique duas vezes em Path
+
 Clique em Novo e adicione: C:\Program Files\PostgreSQL\18\bin
+
 Clique OK em todas as janelas
+
 Feche e reabra o terminal
 
 📦 PASSO 4 — IMPORTAR O BANCO DE DADOS
@@ -56,6 +67,7 @@ Exemplo: pg_restore -U postgres -d gestao_empresas "C:\Users\SeuNome\Desktop\cnp
 Aguarde terminar — pode demorar alguns minutos
 
 ⚙️ PASSO 5 — CONFIGURAR O ARQUIVO .env
+
 Abra a pasta do projeto no PyCharm
 
 Abra o arquivo .env e verifique se está assim:
@@ -63,6 +75,7 @@ Abra o arquivo .env e verifique se está assim:
 DB_HOST=localhost DB_PORT=5432 DB_NAME=gestao_empresas DB_USER=postgres DB_PASSWORD=norran
 
 🚀 PASSO 6 — RODAR O FLASK
+
 No PyCharm, abra o arquivo main.py
 
 Clique no botão Run ou pressione Shift + F10
@@ -72,6 +85,7 @@ Verifique se apareceu no terminal: Running on http://127.0.0.1:5000
 Deixe o PyCharm rodando — não feche
 
 🌐 PASSO 7 — ABRIR O FRONT-END
+
 Abra o VSCode
 
 Clique em File → Open Folder e selecione a pasta do front-end
@@ -85,6 +99,7 @@ Clique em Open with Live Server
 O sistema vai abrir no navegador automaticamente
 
 🧪 PASSO 8 — TESTAR O SISTEMA
+
 Use esses CNPJs para testar:
 
 41.056.328/0001-07 42.946.195/0001-07 36.801.765/0001-78
