@@ -1,10 +1,11 @@
 # Backend do Sistema
 
-O backend do sistema foi desenvolvido em Python utilizando Flask e PostgreSQL, sendo responsável pela comunicação entre o frontend e o banco de dados.
+O backend do sistema foi desenvolvido em Python utilizando Flask e PostgreSQL,
+sendo responsável pela comunicação entre o frontend e o banco de dados.
+A aplicação realiza consultas empresariais, relacionamentos societários e buscas
+de empresas através de rotas Flask.
 
-A aplicação realiza consultas empresariais, relacionamentos societários e buscas de empresas através de uma API REST.
-
-
+---
 
 # Tecnologias Utilizadas
 
@@ -15,12 +16,13 @@ A aplicação realiza consultas empresariais, relacionamentos societários e bus
 - Flask-CORS
 - python-dotenv
 
-
+---
 
 # Estrutura do Backend
 
 O backend foi dividido em módulos para facilitar a organização e manutenção do sistema.
 
+```
 backend/
 │
 ├── config/
@@ -29,11 +31,13 @@ backend/
 ├── services/
 │   └── consulta.py
 │
-├── __pycache__/
-│
 ├── main.py
-├── requirements.txt
+├── .env
+├── .gitignore
+└── requirements.txt
 ```
+
+---
 
 ## config/
 
@@ -48,7 +52,7 @@ A função `conectar()`:
 - trata possíveis erros
 - retorna a conexão ativa
 
-
+---
 
 ## services/
 
@@ -64,6 +68,8 @@ As funções implementadas realizam:
 - relacionamento entre empresas e sócios
 - busca parcial de CNPJ
 
+---
+
 ### buscar_empresa(cnpj)
 
 Busca uma empresa através do CNPJ informado.
@@ -71,6 +77,8 @@ Busca uma empresa através do CNPJ informado.
 Retorna:
 - CNPJ
 - razão social
+
+---
 
 ### buscar_socios(cnpj)
 
@@ -80,6 +88,8 @@ Retorna:
 - CPF
 - nome do sócio
 
+---
+
 ### buscar_empresas_do_socio(cpf)
 
 Busca as empresas vinculadas a um sócio.
@@ -88,57 +98,73 @@ Retorna:
 - CNPJ
 - razão social das empresas
 
+---
+
 ### buscar_cnpj_parcial(trecho)
 
 Realiza buscas utilizando parte do CNPJ.
 
 Foi utilizada a cláusula SQL LIKE para facilitar pesquisas parciais.
+Foi utilizado DISTINCT para evitar resultados duplicados.
 
-
+---
 
 ## main.py
 
-Arquivo principal responsável pela criação da API REST.
+Arquivo principal responsável pela criação das rotas Flask.
 
-A API recebe requisições do frontend, realiza consultas no banco de dados e retorna os dados em formato JSON.
+As rotas recebem requisições do frontend, realizam consultas no banco de dados
+e retornam os dados em formato JSON.
 
 Também foi utilizado Flask-CORS para permitir a comunicação entre frontend e backend.
 
+---
 
+## .env
 
-# Rotas da API
+Arquivo responsável pelo armazenamento seguro das credenciais de conexão com o banco.
+As informações sensíveis como senha e usuário ficam separadas do código,
+seguindo boas práticas de segurança.
+
+O arquivo .env está listado no .gitignore para não ser enviado ao GitHub.
+
+---
+
+# Rotas do Sistema
 
 ## /empresa/<cnpj>
-
 Retorna os dados de uma empresa.
 
 ## /socios/<cnpj>
-
 Retorna os sócios vinculados à empresa.
 
 ## /conexoes/<cpf>
-
 Retorna as empresas relacionadas a um sócio.
 
 ## /buscar/<trecho>
-
 Realiza buscas parciais de CNPJ.
 
 ---
 
 # Comunicação com o Banco de Dados
 
-O sistema utiliza PostgreSQL como banco principal.
+O sistema utiliza PostgreSQL como banco principal com dados reais da Receita Federal.
+
+Volume de dados:
+- 3.335.483 empresas
+- 4.038.299 sócios
+- 5.045.249 participações
 
 As consultas SQL utilizam:
 - SELECT
 - JOIN
+- DISTINCT
 - filtros por CPF e CNPJ
 - buscas utilizando LIKE
 
 Os resultados são enviados ao frontend em formato JSON.
 
-
+---
 
 ## requirements.txt
 
@@ -150,7 +176,7 @@ Principais bibliotecas:
 - flask-cors
 - python-dotenv
 
-
+---
 
 # Objetivo do Backend
 
