@@ -1,10 +1,11 @@
 # Front-end do Sistema
 
-O front-end do sistema foi desenvolvido utilizando HTML, CSS e JavaScript puro, sendo responsável pela interface visual e interação do usuário com o sistema.
+O front-end do sistema foi desenvolvido utilizando HTML, CSS e JavaScript puro,
+sendo responsável pela interface visual e interação do usuário com o sistema.
+A aplicação foi criada com foco em simplicidade, organização e facilidade de
+navegação para consultas empresariais e análise societária.
 
-A aplicação foi criada com foco em simplicidade, organização e facilidade de navegação para consultas empresariais e análise societária.
-
-
+---
 
 # Tecnologias Utilizadas
 
@@ -12,12 +13,14 @@ A aplicação foi criada com foco em simplicidade, organização e facilidade de
 - CSS3
 - JavaScript
 
-
+---
 
 # Estrutura do Front-end
 
-O front-end foi dividido em arquivos separados para facilitar a organização e manutenção do projeto.
+O front-end foi dividido em arquivos separados para facilitar a organização
+e manutenção do projeto.
 
+```
 frontend/
 │
 ├── css/
@@ -27,8 +30,9 @@ frontend/
 │   └── script.js
 │
 └── index.html
+```
 
-
+---
 
 ## index.html
 
@@ -36,9 +40,11 @@ Arquivo responsável pela estrutura principal da aplicação.
 
 Contém:
 - cabeçalho do sistema
-- campo de pesquisa
-- botões de consulta
+- campo de pesquisa com máscara de CNPJ
+- lista de sugestões de busca parcial
+- botão de consulta
 - área de resultados
+- modal de informações do sócio
 - histórico de pesquisas
 
 ---
@@ -57,8 +63,10 @@ Foram aplicados:
 - grid de informações
 - cores para níveis de risco
 - efeitos visuais em botões e elementos interativos
+- estilização do modal de informações
+- estilização da lista de sugestões
 
-
+---
 
 ## js/
 
@@ -69,35 +77,55 @@ Pasta responsável pelas funcionalidades da aplicação.
 Arquivo responsável pela lógica e interatividade do sistema.
 
 Principais funcionalidades implementadas:
-- consulta de empresas
-- busca por CNPJ
-- preenchimento automático
-- identificação de empresas relacionadas
-- cálculo básico de risco
-- histórico de pesquisas
+- consulta de empresas por CNPJ
+- busca parcial de CNPJ com lista de sugestões
+- máscara de formatação para CNPJ e CPF
+- preenchimento automático ao selecionar sugestão
+- exibição dos dados da empresa e sócios
+- modal com informações detalhadas do sócio
+- cálculo de nível de risco por sócio
+- histórico de pesquisas realizadas
+- comunicação com o backend via fetch
 
-
+---
 
 # Funcionalidades da Interface
 
 O sistema permite:
 - consulta de empresas por CNPJ
-- exibição de dados da empresa
-- visualização dos sócios
-- identificação de empresas relacionadas
-- geração de análise básica de risco
-- histórico de pesquisas realizadas
+- busca parcial — o usuário digita parte do CNPJ e o sistema exibe sugestões
+- exibição de dados da empresa consultada
+- visualização dos sócios com CPF formatado
+- abertura de modal ao clicar em "Ver Informações" no sócio
+- visualização de todas as empresas vinculadas ao sócio
+- análise de nível de risco individual por sócio
+- histórico das últimas pesquisas realizadas
+
+---
+
+# Níveis de Risco
+
+O sistema calcula o nível de risco de cada sócio com base na quantidade
+de empresas que ele participa:
+
+- BAIXO  → sócio com participação em 1 empresa
+- MÉDIO  → sócio com participação em 2 a 3 empresas
+- ALTO   → sócio com participação em 4 ou mais empresas
 
 ---
 
 # Comunicação com o Backend
 
-O front-end realiza requisições para a API Flask desenvolvida no backend.
+O front-end realiza requisições para as rotas Flask desenvolvidas no backend
+utilizando fetch em JavaScript.
 
-Os dados recebidos são processados em JavaScript e exibidos dinamicamente na interface do usuário.
+Os dados recebidos em formato JSON são processados e exibidos
+dinamicamente na interface do usuário.
 
-
+---
 
 # Objetivo do Front-end
 
-O objetivo do front-end é fornecer uma interface intuitiva para visualização de informações empresariais e análise societária, permitindo uma navegação simples, rápida e organizada para o usuário.
+O objetivo do front-end é fornecer uma interface intuitiva para visualização
+de informações empresariais e análise societária, permitindo uma navegação
+simples, rápida e organizada para o usuário.
